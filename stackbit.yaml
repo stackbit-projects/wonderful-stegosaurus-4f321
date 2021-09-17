@@ -1,0 +1,74 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  page:
+    type: page
+    label: Page
+    folder: _pages
+    match: '*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: permalink
+        label: Permalink
+      - type: boolean
+        name: published
+        label: Published
+  page_1:
+    type: page
+    label: Page 1
+    match:
+      - _posts/2016-01-01-jekyll.md
+      - _posts/2017-10-03-sherlock.md
+      - _posts/2018-02-05-atticus.md
+      - _posts/2019-07-22-some-more.md
+      - _posts/2019-08-19-jelly-fish.md
+      - _posts/2020-03-09-home-they-brought.md
+      - _projects/1_project.md
+      - _projects/2_project.md
+      - _projects/3_project.md
+      - _projects/4_project.md
+      - _projects/5_project.md
+      - _projects/6_project.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: description
+        label: Description
+      - type: string
+        name: redirect
+        label: Redirect
+  page_2:
+    type: page
+    label: Page 2
+    match: '*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: permalink
+        label: Permalink
+      - type: object
+        name: profile
+        label: Profile
+        fields:
+          - type: string
+            name: align
+            label: Align
+          - type: image
+            name: image
+            label: Image
+      - type: boolean
+        name: published
+        label: Published
